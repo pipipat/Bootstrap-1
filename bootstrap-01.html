@@ -1,47 +1,85 @@
 <!doctype html>
-<html lang="en">
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
   <head>
-    <title>Item Display</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Exercise 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container mt-5" style="max-width: 450px;">
-      <h2 class="mb-3">Item Display</h2>
+    <div class="container mt-4">
+      <h2 class="mb-4">Bootstrap Exercise 2</h2>
       
-      <div class="mb-3">
-        <select name="item-list" id="item-list" class="form-select border-dark">
-          <option value="">-- Select an item --</option>
-        </select>
+      <div class="row mb-5">
+        
+        <div class="col-md-6">
+          <table class="table table-striped">
+            <thead>
+              <tr class="table-primary">
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Laptop</td>
+                <td>$999.99</td>
+              </tr>
+              <tr>
+                <td>Smartphone</td>
+                <td>$699.99</td>
+              </tr>
+              <tr>
+                <td>Headphones</td>
+                <td>$129.99</td>
+              </tr>
+              <tr>
+                <td>Keyboard</td>
+                <td>$79.99</td>
+              </tr>
+              <tr>
+                <td>Mouse</td>
+                <td>$49.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="fs-4 fw-bold mb-2">Item Summary</div>
+          <p class="fs-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
       </div>
-      
-      <hr class="mb-3" />
-      
-      <div class="row mb-2">
-        <div class="col-5 fw-bold">ID</div>
-        <div class="col-7" id="item-id"></div>
-      </div>
-      <div class="row mb-2">
-        <div class="col-5 fw-bold">Name</div>
-        <div class="col-7" id="item-name"></div>
-      </div>
-      <div class="row mb-2">
-        <div class="col-5 fw-bold">Category</div>
-        <div class="col-7" id="item-category"></div>
-      </div>
-      <div class="row mb-2">
-        <div class="col-5 fw-bold">Inventory Amt.</div>
-        <div class="col-7" id="item-inventory"></div>
-      </div>
-      <div class="row mb-2">
-        <div class="col-5 fw-bold">List price</div>
-        <div class="col-7" id="item-price"></div>
+
+      <div class="row">
+        
+        <div class="col-12">
+          <div class="fs-4 fw-bold mb-2">About Us</div>
+          <p class="fs-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat.
+          </p>
+        </div>
+
       </div>
     </div>
-
-    <script src="item-lisr.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>
